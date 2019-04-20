@@ -1,0 +1,103 @@
+@media (min-width: 320px) {
+  .main {
+    .conex {
+      background: rgba(16, 18, 21, 0.5);
+      transition: all 0.5s ease-in-out;
+    }
+    .con1 {
+      width: 150%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      position: absolute;
+      bottom: -15px;
+      right: -20px;
+      .n1 {
+        height: 0;
+        width: 250px;
+        background-color: #405060;
+        margin-right: 15px;
+        padding: 20px;
+        text-align: right;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        color: #868383;
+        border: 0;
+        position: absolute;
+        right: 115px;
+        overflow: hidden;
+        padding: 0;
+        transition: all 0.5s ease-in-out;
+      }
+      .ex1 {
+        height: 70px;
+        border: 1px solid #95a5a6;
+        padding: 10px 20px;
+      }
+      .n2 {
+        width: fit-content;
+        padding: 0;
+        height: 0;
+        background-color: rgba(64, 80, 96, 1);
+        text-align: right;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+      }
+      .ex2 {
+        height: 100%;
+        padding: 15px;
+        border: 1px solid #95a5a6;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+    }
+  }
+}
+@media (min-width: 426px) {
+  .main {
+    .con1 {
+      .n1 {
+        width: 450px;
+      }
+    }
+  }
+}
+@media (min-width: 769px) {
+  .main {
+ 
+    .conex {
+      background: none;
+      transition: none;
+    }
+    .con1 {
+      width: 30%;
+      .n1 {
+        height: 70px;
+        width: 600px;
+        border: 1px solid #95a5a6;
+        padding: 10px 20px;
+      }
+      .n2 {
+        width: fit-content;
+        height: 100%;
+        padding: 15px;
+        border: 1px solid #95a5a6;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: rgba(64, 80, 96, 1);
+        text-align: right;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+  }
+}
+@media (min-width: 1025px) {
+  .main {
+    .con1 {
+      .n1 {
+        width: 750px;
+      }
+    }
+  }
+}

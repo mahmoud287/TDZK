@@ -10,7 +10,7 @@
             <a href="http://tdzk.net/ship_move.php?MoveTo=-1694060108">
               <img class="shape s3" src="./assets/nav-left.gif" alt="9125" title="9125">
             </a>
-            <a @click="ex=!ex">
+            <a @click="toggel1">
               <img
                 class="shape s4"
                 src="./assets/nav-dropscout0.gif"
@@ -214,6 +214,12 @@
               <a href="http://forums.tdzk.com/" target="_webboard">Web Board</a>
               <br>
               <br>
+              <strong>�</strong>
+              <a href="http://tdzk.net/help/" target="_help">Help</a>
+              <br>
+              <strong>�</strong>
+              <a href="http://tdzk.net/logout.php">Logout</a>
+              <br>
             </div>
           </div>
           <div class="n3 n">
@@ -232,6 +238,11 @@
               </a>
             </div>
           </div>
+          <div class="ico">
+            <a @click="toggel">
+              <i class="fas fa-bars fa-3x"></i>
+            </a>
+          </div>
           <div class="mid">
             <div class="m1 m">
               <div class="pri" style="font-weight: bold; text-decoration: underline;">Messages:</div>
@@ -243,106 +254,49 @@
               </div>
             </div>
             <div class="m2 m">
-              <table border="0" cellspacing="0" cellpading="2">
-                <tbody>
-                  <tr>
-                    <td class="mainblock" rowspan="3">
-                      <img src="./assets/stars100.gif" height="100" width="100" border="0" alt>
-                    </td>
-                    <td class="mainblock" width="10" rowspan="3">
-                      <img src="./assets/spacer.gif" height="1" width="10" border="0" alt>
-                    </td>
-                    <td
-                      width="100"
-                      class="mainblock"
-                      rowspan="3"
-                      style="text-align: left; vertical-align: middle;"
-                    >
-                      <strong>Sector</strong>
-                      <br>
-                      <span class="pagetitle">
-                        <strong>9126</strong>
-                      </span>
-                      <br>
-                      <span class="high">Deep Space</span>
-                      <br>
-                      <span class="quad">Normal</span>
-                      <br>
-                      <span class="quad">100% Visibility</span>
-                      <table class="mainblock" border="0" cellpadding="0" cellspacing="0">
-                        <tbody>
-                          <tr style="text-align: right;">
-                            <td width="40" height="13">
-                              <a href="javascript:helpPopup('Term', 'Auras')">
-                                <img
-                                  src="./assets/aura_title.gif"
-                                  height="13"
-                                  width="40"
-                                  border="0"
-                                  alt
-                                >
-                              </a>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </td>
-
-                    <td class="mainblock" width="10" rowspan="3">
-                      <img src="./assets/spacer.gif" height="1" width="10" border="0" alt>
-                    </td>
-                    <td
-                      class="mainblock"
-                      width="33"
-                      style="text-align: center; vertical-align: bottom;"
-                    >
-                      <img src="./assets/spacer.gif" height="1" width="33" border="0" alt>
-                    </td>
-                    <td class="mainblock" style="text-align: center; vertical-align: middle;">
-                      <span class="pri">
-                        [
-                        <a href="http://tdzk.net/ship_move.php?MoveTo=-1995070771">9106</a>]
-                      </span>
-                      <br>|
-                    </td>
-                    <td class="mainblock" style="text-align: center; vertical-align: bottom;"></td>
-                  </tr>
-                  <tr height="34">
-                    <td class="mainblock" style="text-align: center; vertical-align: middle;">
-                      <span class="pri">
-                        <a href="http://tdzk.net/ship_move.php?MoveTo=-1694060108">[9125]-</a>
-                      </span>
-                    </td>
-                    <td class="mainblock" style="text-align: center; vertical-align: middle;">
-                      <span class="quad">[9126]</span>
-                    </td>
-                    <td class="mainblock" style="text-align: center; vertical-align: middle;">
-                      -
-                      <span class="pri">
-                        [
-                        <a href="http://tdzk.net/ship_move.php?MoveTo=-152858542">9127</a>]
-                      </span>
-                    </td>
-                  </tr>
-                  <tr height="33">
-                    <td class="mainblock" style="text-align: center; vertical-align: top;"></td>
-                    <td class="mainblock" style="text-align: center; vertical-align: middle;">
-                      |
-                      <br>
-                      <span class="pri">
-                        [
-                        <a href="http://tdzk.net/ship_move.php?MoveTo=454878741">9146</a>]
-                      </span>
-                    </td>
-                    <td class="mainblock" style="text-align: center; vertical-align: top;">
-                      <span class>
-                        [
-                        <a href="http://tdzk.net/ship_move.php?MoveTo=108468389">42001</a>]
-                      </span>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="mr10">
+                <img class="star" src="./assets/stars100.gif" border="0" alt>
+              </div>
+              <div>
+                <strong>Sector</strong>
+                <br>
+                <span class="pagetitle">
+                  <strong>9126</strong>
+                </span>
+                <br>
+                <span class="high">Deep Space</span>
+                <br>
+                <span class="quad">Normal</span>
+                <br>
+                <span class="quad">100% Visibility</span>
+                <br>
+                <a href="javascript:helpPopup('Term', 'Auras')">
+                  <img src="./assets/aura_title.gif" height="13" width="40" border="0" alt>
+                </a>
+              </div>
+              <div class="e3">
+                <span class="pri">
+                  <a href="http://tdzk.net/ship_move.php?MoveTo=-1995070771">[9106]</a>
+                </span>
+                <br>|
+                <br>
+                <span class="pri">
+                  <a href="http://tdzk.net/ship_move.php?MoveTo=-1694060108">[9125]-</a>
+                </span>
+                <span class="quad">[9126]-</span>
+                <span class="pri">
+                  <a href="http://tdzk.net/ship_move.php?MoveTo=-152858542">[9127]</a>
+                </span>
+                <br>|
+                <br>
+                <span class="pri">
+                  <a href="http://tdzk.net/ship_move.php?MoveTo=454878741">[9146]</a>
+                </span>
+                ---
+                <span class>
+                  <a href="http://tdzk.net/ship_move.php?MoveTo=108468389">[42001]</a>
+                </span>
+              </div>
             </div>
             <div class="m3 m">
               <span class="pagetitle" style="font-weight: bold;">Concentric Station</span>
@@ -360,196 +314,131 @@
               </span>
             </div>
             <div class="m4">
-              <table class="table-chart-bordered" border="0" cellspacing="0" cellpadding="0">
-                <tbody>
-                  <tr>
-                    <td width="200"></td>
-                    <td width="150"></td>
-                    <td width="70"></td>
-                    <td width="40"></td>
-                    <td width="60"></td>
-                  </tr>
-                  <tr class="alt1">
-                    <td
-                      class="subtitle"
-                      colspan="5"
-                      style="vertical-align: bottom; text-align: center;"
-                    >Other Ships in this Sector</td>
-                  </tr>
-                  <tr class="alt0">
-                    <td></td>
-                    <td align="left">Name</td>
-                    <td align="left">Class/Race</td>
-                    <td align="left">Level</td>
-                    <td>Rating</td>
-                  </tr>
-                  <tr>
-                    <td class="spacer" colspan="5" height="1"></td>
-                  </tr>
-                  <tr class="alt1">
-                    <td width="200" height="20">
-                      <a href="http://tdzk.net/alliance_roster.php?Display=575">
-                        <img
-                          title="unAdmin unAlliance"
-                          alt="unAdmin unAlliance"
-                          src="http://tdzk.agadak.net/getChief/getChief_files/alliance-575.gif"
-                          border="0"
-                          height="20"
-                          width="50"
-                        >
-                      </a>
-                      <a href="http://tdzk.net/examine_remote.php?id=19">
-                        <img
-                          title="Master Chief"
-                          alt="Master Chief"
-                          src="./assets/player-19.gif"
-                          height="20"
-                          width="150"
-                          border="0"
-                        >
-                      </a>
-                    </td>
-                    <td align="left">K for Kan't spell</td>
-                    <td align="left">Freighter</td>
-                    <td align="left">L: 215</td>
-                    <td>5/9</td>
-                  </tr>
-                  <tr class="alt1">
-                    <td align="left">
-                      <table border="0" cellspacing="2" cellpadding="0" class="alt1">
-                        <tbody>
-                          <tr height="13">
-                            <td></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </td>
-                    <td align="left">
-                      <span class>
-                        Master Chief
-                        <span class="sec">[Online]</span>
-                      </span>
-                    </td>
-                    <td align="left">Tamaran</td>
-                    <td align="left">L: 27</td>
-                    <td>
-                      <span class="pri">
-                        [
-                        <a href="javascript:examineChief()">Examine</a>]
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="spacer" colspan="5" height="1"></td>
-                  </tr>
-                  <tr class="alt1">
-                    <td width="200" height="20">
-                      <a href="http://tdzk.net/alliance_roster.php?Display=571">
-                        <img
-                          title="Admin Alliance"
-                          alt="Admin Alliance"
-                          src="http://tdzk.agadak.net/getChief/getChief_files/alliance-571.gif"
-                          border="0"
-                          height="20"
-                          width="50"
-                        >
-                      </a>
-                      <a href="http://tdzk.net/examine_remote.php?id=1">
-                        <img
-                          title="Aelanna"
-                          alt="Aelanna"
-                          src="./assets/player-1.gif"
-                          height="20"
-                          width="150"
-                          border="0"
-                        >
-                      </a>
-                    </td>
-                    <td align="left">TPx Feathered Ven...</td>
-                    <td align="left">Escape Pod</td>
-                    <td align="left">L: 215</td>
-                    <td>5/9</td>
-                  </tr>
-                  <tr class="alt1">
-                    <td align="left">
-                      <table border="0" cellspacing="2" cellpadding="0" class="alt1">
-                        <tbody>
-                          <tr height="13">
-                            <td></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </td>
-                    <td align="left">
-                      <span class="ter">
-                        Aelanna
-                        <span class="sec">[Online]</span>
-                      </span>
-                    </td>
-                    <td align="left">Taenarian</td>
-                    <td align="left">L: 1</td>
-                    <td>
-                      <span class="pri">
-                        <!--        [<a href="/getChief/getChief.php?Message=That doesn't look like chief to me!<script>alert('Nope')</script>&level=0">Examine</a>] -->
-                        [
-                        <a
-                          href="/getChief/getChief.php?Message=That doesn't look like chief to me!&amp;level=0"
-                        >Examine</a>]
-                      </span>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+              <v-layout align-center justify-center row fill-height>
+                <v-flex xs12>
+                  <h3>Other Ships in this Sector</h3>
+                </v-flex>
+              </v-layout>
+              <v-layout class="body-1 head" row>
+                <v-flex xs3>
+                  <h4>Name</h4>
+                </v-flex>
+                <v-flex xs3>
+                  <h4>Class/Race</h4>
+                </v-flex>
+                <v-flex xs3>
+                  <h4>Level</h4>
+                </v-flex>
+                <v-flex xs3>
+                  <h4>Rating</h4>
+                </v-flex>
+              </v-layout>
+              <v-layout row>
+                <v-flex xs3>
+                  <h5>Flying Gamecube</h5>
+                </v-flex>
+                <v-flex xs3>
+                  <h4>Ranger</h4>
+                </v-flex>
+                <v-flex xs3>
+                  <h4>L: 225</h4>
+                </v-flex>
+                <v-flex xs3>
+                  <h4>5/9</h4>
+                </v-flex>
+              </v-layout>
+              <v-layout row>
+                <v-flex xs3>
+                  <span class="alert">
+                    Mardak
+                    <span class="sec">[Online]</span>
+                  </span>
+                </v-flex>
+                <v-flex xs3>
+                  <h4>Wraith</h4>
+                </v-flex>
+                <v-flex xs3>
+                  <h4>L: 27</h4>
+                </v-flex>
+                <v-flex xs3>
+                  <span class="pri">
+                    [
+                    <a
+                      href="/getChief/getChief.php?Message=Mardak slaps you&lt;br&gt;for examining him.&lt;br&gt;&lt;span class='alert'&gt;DIEEE!!&lt;/span&gt;&amp;level=0"
+                    >Examine</a>]
+                  </span>
+                </v-flex>
+              </v-layout>
+              <v-layout row>
+                <v-flex xs12>
+                  <a href="http://tdzk.net/alliance_roster.php?Display=575">
+                    <img
+                      title="unAdmin unAlliance"
+                      alt="unAdmin unAlliance"
+                      src="http://tdzk.agadak.net/getChief/getChief_files/alliance-575.gif"
+                      border="0"
+                    >
+                  </a>
+                  <a href="http://tdzk.net/examine_remote.php?id=19">
+                    <img
+                      title="Master Chief"
+                      alt="Master Chief"
+                      src="./assets/player-19.gif"
+                      border="0"
+                    >
+                  </a>
+                </v-flex>
+              </v-layout>
             </div>
             <div class="m5 m">
-              <table width="390" class="mainblock" border="0" cellspacing="0" cellpadding="2">
-                <tbody>
-                  <tr>
-                    <td colspan="3" style="text-align: center;">
-                      <span class="subtitle">Sector Resources:</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td width="150" style="text-align: left; vertical-align: top;">Machinery:</td>
-                    <td width="100" style="text-align: right; vertical-align: top;">10390</td>
-                    <td width="140" style="text-align: right; vertical-align: top;">
-                      <span class="ter">
-                        [
-                        <a href="http://tdzk.net/current_sector.php?Good=7&amp;Action=1">Gather</a>]
-                        [
-                        <a
-                          href="http://tdzk.net/current_sector.php?Good=7&amp;Action=2"
-                        >Gather All</a>]
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td width="150" style="text-align: left; vertical-align: top;">Electronics:</td>
-                    <td width="100" style="text-align: right; vertical-align: top;">5255</td>
-                    <td width="140" style="text-align: right; vertical-align: top;">
-                      <span class="ter">
-                        [
-                        <a href="http://tdzk.net/current_sector.php?Good=8&amp;Action=1">Gather</a>]
-                        [
-                        <a
-                          href="http://tdzk.net/current_sector.php?Good=8&amp;Action=2"
-                        >Gather All</a>]
-                      </span>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+              <v-layout row>
+                <v-flex xs12 class="text-center">
+                  <span class="subtitle">Sector Resources:</span>
+                </v-flex>
+              </v-layout>
+              <v-layout row>
+                <v-flex xs6>
+                  <span>Machinery:</span>
+                </v-flex>
+                <v-flex xs3>
+                  <span>10390</span>
+                </v-flex>
+                <v-flex xs3>
+                  <span class="ter">
+                    [
+                    <a href="http://tdzk.net/current_sector.php?Good=7&amp;Action=1">Gather</a>]
+                    <br>[
+                    <a href="http://tdzk.net/current_sector.php?Good=7&amp;Action=2">Gather All</a>]
+                  </span>
+                </v-flex>
+              </v-layout>
+              <v-layout row>
+                <v-flex xs6>
+                  <span>Electronics:</span>
+                </v-flex>
+                <v-flex xs3>
+                  <span>5255</span>
+                </v-flex>
+                <v-flex xs3>
+                  <span class="ter">
+                    [
+                    <a href="http://tdzk.net/current_sector.php?Good=8&amp;Action=1">Gather</a>]
+                    <br>[
+                    <a href="http://tdzk.net/current_sector.php?Good=8&amp;Action=2">Gather All</a>]
+                  </span>
+                </v-flex>
+              </v-layout>
             </div>
           </div>
         </div>
       </div>
-      <div class="con1">
-        <div class="n1">
+      <div class="con1" :class="{conex}">
+        <div class="n1" :class="{ex1}">
           Best Viewed at 800 x 600 or Higher Resolution
           <br>Taenaria Derivia Zallus Kitara 2.1 � 2003 Vivid
           <br>
         </div>
-        <div class="n2">
+        <div class="n2" :class="{ex2}">
           <span class="pri">SHD: 625/625</span>
           <br>
           <span class="pri">ARM: 6875/6875</span>
@@ -695,12 +584,35 @@ export default {
   data() {
     return {
       ex: false,
+      ex1: false,
+      ex2: false,
+      conex: false,
       show: true
     };
   },
-  methods: {}
+  methods: {
+    toggel: function() {
+      if ((this.ex = true)) {
+        this.ex = false;
+      }
+      this.ex1 = !this.ex1;
+      this.ex2 = !this.ex2;
+      this.conex = !this.conex;
+    },
+    toggel1: function() {
+      if (this.ex1 == true && this.ex2 == true && this.conex == true) {
+        this.ex1 = false;
+        this.ex2 = false;
+        this.conex = false;
+      }
+      this.ex = !this.ex;
+    }
+  }
 };
 </script>
 <style >
-@import '../dist/css/main.min.css';
+@import "../dist/css/main.min.css";
+@import "../dist/css/style1.min.css";
+@import "../dist/css/style2.min.css";
+@import "../dist/css/style3.min.css";
 </style>
